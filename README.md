@@ -2,11 +2,12 @@
 
 ## About
 
-**Colie** is a lightweight, header-only C library for terminal text styling and colour formatting. It uses ANSI escape codes to customise text appearance, supporting foreground and background colours, text styles, and resets.
+**COLIE** is a lightweight, header-only C library for terminal text styling and colour formatting. It uses ANSI escape codes to customise text appearance, supporting foreground and background colours, text styles, and resets.
 
 ## Features
 
-- Foreground and background colour control  
+- Foreground  colour control  
+- Background  colour control  
 - Text styling (bold, italic, underline, and more)  
 - Easy to integrate and use  
 - No dependencies, works with any terminal supporting ANSI escape codes  
@@ -88,3 +89,27 @@ This project is released under the MIT Licence. See the [LICENCE](LICENCE) file 
 ## Contributions
 
 Contributions are welcome! Submit a pull request or open an issue on the repository.
+
+
+# COLIE Library: Colour Formatting in C
+
+## About
+
+**Colie** is a lightweight, header-only C library for terminal text styling and colour formatting. It uses ANSI escape codes to customise text appearance, supporting foreground and background colours, text styles, and resets.
+
+## Features
+
+- Foreground and background colour control  
+- Text styling (bold, italic, underline, and more)  
+- New function: `int cprintf(const char * format, ...);` for formatted output with colour
+- Easy to integrate and use  
+- No dependencies, works with any terminal supporting ANSI escape codes  
+
+## New Feature: `cprintf`
+
+The library now includes the `cprintf` function, which provides an easy way to format text with colour directly in `printf`-like style. The function supports colour formatting and text styling by using custom escape sequences.
+
+### Function Signature:
+
+```c
+int cprintf(const char * format, ...);
